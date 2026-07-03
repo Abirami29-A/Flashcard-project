@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flashcard Pro - Quiz</title>
+  <link rel="stylesheet" href="quizstyle.css" />
+</head>
+<body>
+  <div class="quiz-container">
+    <div class="quiz-top">
+      <a href="dashboard.html" class="back-btn">← Dashboard</a>
+      <div id="timer" class="timer">60</div>
+    </div>
+
+    <h1>🎯 Quiz Time</h1>
+
+    <div class="quiz-card">
+      <h2 id="question">Question</h2>
+      <div id="options" class="options"></div>
+      <button class="next-btn" onclick="nextQuestion()">Next</button>
+    </div>
+  </div>
+
+  <script src="quiz.js"></script>
+</body>
+</html>

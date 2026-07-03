@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flashcard Pro</title>
+<link rel="stylesheet" href="flashstyle.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🎓 Flashcard Master Pro</h1>
+
+    <div class="header">
+        <button id="themeBtn">🌙 Theme</button>
+        <button id="shuffleBtn">🔀 Shuffle</button>
+        <button onclick="favoriteCard()">⭐ Favorite</button>
+    </div>
+
+    <br>
+
+    <input
+        type="text"
+        id="search"
+        placeholder="Search Question">
+
+    <br><br>
+
+    <div class="dashboard">
+        Total:
+        <span id="totalCards">0</span>
+
+        | Score:
+        <span id="score">0</span>
+
+        | Favorites:
+        <span id="favoriteCount">0</span>
+
+        | Timer:
+        <span id="timer">00:00</span>
+    </div>
+
+    <br>
+
+    <div class="progress">
+        <div id="progressFill"></div>
+    </div>
+
+    <p id="cardCounter"></p>
+
+    <div id="card">
+
+        <span id="category"></span>
+
+        <h2 id="question"></h2>
+
+        <button id="answerBtn">
+            Show Answer
+        </button>
+
+        <p id="answer"></p>
+
+    </div>
+
+    <br>
+
+    <div class="navigation">
+
+        <button onclick="prevCard()">
+            ⬅ Previous
+        </button>
+
+        <button onclick="speakCard()">
+            🔊 Speak
+        </button>
+
+        <button onclick="nextCard()">
+            Next ➡
+        </button>
+
+    </div>
+
+    <br>
+
+    <h3>Add / Edit Card</h3>
+
+    <input
+        type="text"
+        id="newQuestion"
+        placeholder="Enter Question">
+
+    <br><br>
+
+    <input
+        type="text"
+        id="newAnswer"
+        placeholder="Enter Answer">
+
+    <br><br>
+
+    <select id="newCategory">
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>JavaScript</option>
+        <option>Cyber Security</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="addCard()">Add</button>
+
+    <button onclick="editCard()">Edit</button>
+
+    <button onclick="deleteCard()">Delete</button>
+
+    <br><br>
+
+    Completed:
+    <span id="completed">0</span>
+
+    <br>
+
+    Accuracy:
+    <span id="accuracy">100%</span>
+
+    <br>
+
+    Favorites:
+    <span id="fav">0</span>
+
+</div>
+
+<script src="flashscript.js"></script>
+
+</body>
+</html>

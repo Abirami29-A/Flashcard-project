@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flashcard Pro - Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <h2>📚 Flashcard Pro</h2>
+
+    <div class="nav-actions">
+      <button id="themeBtn" class="secondary-btn">🌙 Dark</button>
+      <button onclick="logout()" class="danger-btn">Logout</button>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="welcome-box fade-in">
+      <h1 id="welcome"></h1>
+      <p>Welcome to your smart study dashboard</p>
+    </section>
+
+    <section class="dashboard-grid">
+      <div class="box fade-in">
+        <h3>Total Flashcards</h3>
+        <h1 id="totalCards">0</h1>
+      </div>
+
+      <div class="box fade-in">
+        <h3>Categories</h3>
+        <h1>3</h1>
+      </div>
+
+      <div class="box fade-in">
+        <h3>Quiz Attempts</h3>
+        <h1 id="quizAttempts">0</h1>
+      </div>
+
+      <div class="box fade-in">
+        <h3>Best Score</h3>
+        <h1 id="bestScore">0</h1>
+      </div>
+    </section>
+
+    <section class="progress-section fade-in">
+      <h2>Your Progress</h2>
+
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+
+      <p id="progressText">0% Completed</p>
+    </section>
+
+    <section class="quick-actions">
+      <a href="flashcard.html" class="action-card">
+        <div class="icon">📚</div>
+        <h3>Flashcards</h3>
+        <p>Create and manage study cards</p>
+      </a>
+
+      <a href="quiz.html" class="action-card">
+        <div class="icon">🎯</div>
+        <h3>Quiz</h3>
+        <p>Test your knowledge</p>
+      </a>
+
+      <a href="result.html" class="action-card">
+        <div class="icon">📊</div>
+        <h3>Results</h3>
+        <p>View latest performance</p>
+      </a>
+
+      <a href="certificate.html" class="action-card">
+        <div class="icon">🏆</div>
+        <h3>Certificate</h3>
+        <p>Generate completion certificate</p>
+      </a>
+    </section>
+  </main>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
